@@ -1,0 +1,17 @@
+name: PracticeRIBs
+packages:
+  RIBs:
+    url: https://github.com/uber/RIBs
+    from: 0.13.0
+targets:
+  PracticeRIBs:
+    settings:
+      base:
+        INFOPLIST_FILE: PracticeRIBs/Application/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: co.kr.greencar.practice-ribs
+    type: application
+    platform: iOS
+    deploymentTarget: 13.0
+    sources: [PracticeRIBs]
+    dependencies:
+      - package: RIBs
