@@ -10,6 +10,7 @@
 		6A2FA3BE285ACAA2000EFA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2FA3BD285ACAA2000EFA57 /* AppDelegate.swift */; };
 		6A2FA3C7285ACAA4000EFA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2FA3C6285ACAA4000EFA57 /* Assets.xcassets */; };
 		6A2FA3CA285ACAA4000EFA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A2FA3C8285ACAA4000EFA57 /* LaunchScreen.storyboard */; };
+		6A2FA3D9285AE4A3000EFA57 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2FA3D8285AE4A3000EFA57 /* RIBs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2FA3D9285AE4A3000EFA57 /* RIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,9 @@
 			dependencies = (
 			);
 			name = PracticeRibs;
+			packageProductDependencies = (
+				6A2FA3D8285AE4A3000EFA57 /* RIBs */,
+			);
 			productName = PracticeRibs;
 			productReference = 6A2FA3BA285ACAA2000EFA57 /* PracticeRibs.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 6A2FA3B1285ACAA2000EFA57;
+			packageReferences = (
+				6A2FA3D7285AE4A3000EFA57 /* XCRemoteSwiftPackageReference "RIBs" */,
+			);
 			productRefGroup = 6A2FA3BB285ACAA2000EFA57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A2FA3D7285AE4A3000EFA57 /* XCRemoteSwiftPackageReference "RIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A2FA3D8285AE4A3000EFA57 /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A2FA3D7285AE4A3000EFA57 /* XCRemoteSwiftPackageReference "RIBs" */;
+			productName = RIBs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A2FA3B2285ACAA2000EFA57 /* Project object */;
 }
