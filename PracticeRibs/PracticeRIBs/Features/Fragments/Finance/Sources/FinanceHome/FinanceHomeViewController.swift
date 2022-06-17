@@ -5,15 +5,17 @@
 //  Created by G00332 on 17/6/2022.
 //
 
+import UIKit
+
+import DesignSystem
+
 import RIBs
 import RxSwift
-import UIKit
 
 protocol FinanceHomePresentableListener: AnyObject {
 }
 
 final class FinanceHomeViewController: UIViewController, FinanceHomePresentable, FinanceHomeViewControllable {
-  weak var listener: FinanceHomePresentableListener?
   
   // MARK: - Init
   
@@ -27,24 +29,46 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
     setupViews()
   }
   
+  // MARK: - FinanceHomePresentable Impl
+  
+  weak var listener: FinanceHomePresentableListener?
+  
+  
   // MARK: - UI Compoents
   
-  private let label: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
+  private var superButton: SuperButton = {
+    let button = SuperButton()
+    return button
   }()
   
   
   // MARK: - Private
   
+  private let disposeBag = DisposeBag()
+  
   private func setupViews() {
-    label.text = "Finance Home"
+    setupComponents()
+    setupLayouts()
+    setupEvents()
+  }
+  
+  private func setupComponents() {
     view.backgroundColor = .systemTeal
-    view.addSubview(label)
-    NSLayoutConstraint.activate([
-      label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-    ])
+    view.addSubview(superButton)
+  }
+  
+  private func setupLayouts() {
+    superButton.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+    }
+  }
+  
+  private func setupEvents() {
+    superButton.rx.tap
+      .asDriver()
+      .drive(onNext: { _ in
+        print("테스트")
+      })
+      .disposed(by: disposeBag)
   }
 }

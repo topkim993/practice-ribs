@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Finance",
+    platforms: [
+      .iOS(.v14)
+    ],
     products: [
         .library(
             name: "FinanceHome",
@@ -12,12 +15,15 @@ let package = Package(
         )
     ],
     dependencies: [
-     
+      .package(path: "../../../UserInterface/DesignSystem"),
+      .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.5.0"))
     ],
     targets: [
         .target(
             name: "FinanceHome",
-            dependencies: []
+            dependencies: [
+              "DesignSystem"
+            ]
         )
     ]
 )
