@@ -18,7 +18,7 @@
 		A24B8CD71A58A45084D728C4 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2383FF57C0A0F938DFC1 /* AppRootInteractor.swift */; };
 		A7486D6D0C9D2DD0964D8FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB18525A199F4EB81B4911AA /* LaunchScreen.storyboard */; };
 		B6866F65525DC9AB684DFC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9094932D979DCCE0E7635A /* AppDelegate.swift */; };
-		F4EC162344D17BEEC9D66A48 /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506C479897F5561D4A54ADE /* AppRootViewController.swift */; };
+		F4EC162344D17BEEC9D66A48 /* AppRootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506C479897F5561D4A54ADE /* AppRootTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		4320DE1AABD8F28D554D0833 /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
 		4D66537BD4533108502FAE9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C6A8BEA25F413352F1679F /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
-		5506C479897F5561D4A54ADE /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
+		5506C479897F5561D4A54ADE /* AppRootTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootTabViewController.swift; sourceTree = "<group>"; };
 		5F499FF5E03D6ACF2CF5D935 /* PracticeRIBs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeRIBs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AE74FAB79BAA0EF5699DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A2570A9285C0566004B9443 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				4320DE1AABD8F28D554D0833 /* AppRootBuilder.swift */,
 				1BFB2383FF57C0A0F938DFC1 /* AppRootInteractor.swift */,
 				B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */,
-				5506C479897F5561D4A54ADE /* AppRootViewController.swift */,
+				5506C479897F5561D4A54ADE /* AppRootTabViewController.swift */,
 			);
 			path = AppRoot;
 			sourceTree = "<group>";
@@ -144,6 +144,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6ABCECF8285C1A220050FF10 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
 		7B170E9806150A2D2A88A5AA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +163,7 @@
 		851C1B3EE102F7C438D65DB3 /* PracticeRIBs */ = {
 			isa = PBXGroup;
 			children = (
+				6ABCECF8285C1A220050FF10 /* Temp */,
 				F38D41A9A774966961E2ABC4 /* Application */,
 				6A2570A0285C01BB004B9443 /* Features */,
 				6A2570B1285C08A6004B9443 /* UserInterface */,
@@ -267,7 +275,7 @@
 				38B177321DE5C280D2FC5EB3 /* AppRootBuilder.swift in Sources */,
 				A24B8CD71A58A45084D728C4 /* AppRootInteractor.swift in Sources */,
 				4AD262FFD0A0226D7D5CBE6D /* AppRootRouter.swift in Sources */,
-				F4EC162344D17BEEC9D66A48 /* AppRootViewController.swift in Sources */,
+				F4EC162344D17BEEC9D66A48 /* AppRootTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
