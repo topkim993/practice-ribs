@@ -11,8 +11,8 @@
 		23AA0F066C8718DD291B526A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D66537BD4533108502FAE9D /* Assets.xcassets */; };
 		38B177321DE5C280D2FC5EB3 /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320DE1AABD8F28D554D0833 /* AppRootBuilder.swift */; };
 		4AD262FFD0A0226D7D5CBE6D /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */; };
-		58313B29AAAA546DE827A887 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 76C48412CFE1C777CCB6FB5A /* RIBs */; };
-		6A25709D285C0018004B9443 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = 6A25709C285C0018004B9443 /* Features */; };
+		6A2570A8285C053B004B9443 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570A7285C053B004B9443 /* RIBs */; };
+		6A2570AB285C0585004B9443 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570AA285C0585004B9443 /* Features */; };
 		A24B8CD71A58A45084D728C4 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2383FF57C0A0F938DFC1 /* AppRootInteractor.swift */; };
 		A7486D6D0C9D2DD0964D8FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB18525A199F4EB81B4911AA /* LaunchScreen.storyboard */; };
 		B6866F65525DC9AB684DFC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9094932D979DCCE0E7635A /* AppDelegate.swift */; };
@@ -27,8 +27,10 @@
 		5506C479897F5561D4A54ADE /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
 		5F499FF5E03D6ACF2CF5D935 /* PracticeRIBs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeRIBs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AE74FAB79BAA0EF5699DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A25709C285C0018004B9443 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
-		7EFF7F777F23026A94BF4A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6A2570A9285C0566004B9443 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
+		6A2570AD285C05C5004B9443 /* Finance */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Finance; sourceTree = "<group>"; };
+		6A2570AE285C076D004B9443 /* Transport */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Transport; sourceTree = "<group>"; };
+		7EFF7F777F23026A94BF4A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
 		FD9094932D979DCCE0E7635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58313B29AAAA546DE827A887 /* RIBs in Frameworks */,
+				6A2570A8285C053B004B9443 /* RIBs in Frameworks */,
+				6A2570AB285C0585004B9443 /* Features in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,34 @@
 			path = AppRoot;
 			sourceTree = "<group>";
 		};
+		6A2570A0285C01BB004B9443 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6A2570AC285C0588004B9443 /* Fragments */,
+				6A2570A9285C0566004B9443 /* Features */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6A2570AC285C0588004B9443 /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				6A2570AD285C05C5004B9443 /* Finance */,
+				6A2570AE285C076D004B9443 /* Transport */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
+		6A2570AF285C07A7004B9443 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4D66537BD4533108502FAE9D /* Assets.xcassets */,
+				7EFF7F777F23026A94BF4A1E /* Info.plist */,
+				BB18525A199F4EB81B4911AA /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		7B170E9806150A2D2A88A5AA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +99,8 @@
 		851C1B3EE102F7C438D65DB3 /* PracticeRIBs */ = {
 			isa = PBXGroup;
 			children = (
-				6A25709C285C0018004B9443 /* Features */,
 				F38D41A9A774966961E2ABC4 /* Application */,
+				6A2570A0285C01BB004B9443 /* Features */,
 			);
 			path = PracticeRIBs;
 			sourceTree = "<group>";
@@ -93,9 +124,7 @@
 		F38D41A9A774966961E2ABC4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4D66537BD4533108502FAE9D /* Assets.xcassets */,
-				7EFF7F777F23026A94BF4A1E /* Info.plist */,
-				BB18525A199F4EB81B4911AA /* LaunchScreen.storyboard */,
+				6A2570AF285C07A7004B9443 /* SupportingFiles */,
 				7B170E9806150A2D2A88A5AA /* AppDelegate */,
 				68E622D7AB8D65FABFC7A564 /* AppRoot */,
 			);
@@ -119,7 +148,8 @@
 			);
 			name = PracticeRIBs;
 			packageProductDependencies = (
-				76C48412CFE1C777CCB6FB5A /* RIBs */,
+				6A2570A7285C053B004B9443 /* RIBs */,
+				6A2570AA285C0585004B9443 /* Features */,
 			);
 			productName = PracticeRIBs;
 			productReference = 5F499FF5E03D6ACF2CF5D935 /* PracticeRIBs.app */;
@@ -158,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A25709D285C0018004B9443 /* Features in Resources */,
 				23AA0F066C8718DD291B526A /* Assets.xcassets in Resources */,
 				A7486D6D0C9D2DD0964D8FDF /* LaunchScreen.storyboard in Resources */,
 			);
@@ -200,7 +229,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = A32SVNA976;
-				INFOPLIST_FILE = PracticeRIBs/Application/Info.plist;
+				INFOPLIST_FILE = PracticeRIBs/Application/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = A32SVNA976;
-				INFOPLIST_FILE = PracticeRIBs/Application/Info.plist;
+				INFOPLIST_FILE = PracticeRIBs/Application/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,10 +411,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		76C48412CFE1C777CCB6FB5A /* RIBs */ = {
+		6A2570A7285C053B004B9443 /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5F0A1E3350E45E2CAB4D5DBF /* XCRemoteSwiftPackageReference "RIBs" */;
 			productName = RIBs;
+		};
+		6A2570AA285C0585004B9443 /* Features */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Features;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

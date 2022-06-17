@@ -9,6 +9,8 @@ import RIBs
 import RxSwift
 import UIKit
 
+import FinanceHome
+
 protocol AppRootPresentableListener: AnyObject {
     
 }
@@ -19,5 +21,7 @@ final class AppRootViewController: UIViewController, AppRootPresentable, AppRoot
     
     override func viewDidLoad() {
         view.backgroundColor = .green
+        
+        FinanceHomeVO()
     }
 }
