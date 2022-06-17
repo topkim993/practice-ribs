@@ -30,6 +30,9 @@
 		6A2570A9285C0566004B9443 /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
 		6A2570AD285C05C5004B9443 /* Finance */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Finance; sourceTree = "<group>"; };
 		6A2570AE285C076D004B9443 /* Transport */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Transport; sourceTree = "<group>"; };
+		6A2570B5285C096B004B9443 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UserInterface; sourceTree = "<group>"; };
+		6A2570B9285C09E5004B9443 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Resources; sourceTree = "<group>"; };
+		6A2570BA285C09E5004B9443 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
 		7EFF7F777F23026A94BF4A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
 		FD9094932D979DCCE0E7635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +90,31 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		6A2570B0285C086D004B9443 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6A2570B1285C08A6004B9443 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				6A2570B6285C096E004B9443 /* Fragments */,
+				6A2570B5285C096B004B9443 /* UserInterface */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		6A2570B6285C096E004B9443 /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				6A2570BA285C09E5004B9443 /* DesignSystem */,
+				6A2570B9285C09E5004B9443 /* Resources */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
 		7B170E9806150A2D2A88A5AA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +129,8 @@
 			children = (
 				F38D41A9A774966961E2ABC4 /* Application */,
 				6A2570A0285C01BB004B9443 /* Features */,
+				6A2570B0285C086D004B9443 /* Modules */,
+				6A2570B1285C08A6004B9443 /* UserInterface */,
 			);
 			path = PracticeRIBs;
 			sourceTree = "<group>";
