@@ -66,9 +66,11 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
   private func setupEvents() {
     superButton.rx.tap
       .asDriver()
-      .drive(onNext: { _ in
-        print("테스트")
-      })
+      .drive(
+        onNext: { _ in
+          print("Button did tap")
+        }
+      )
       .disposed(by: disposeBag)
   }
 }
