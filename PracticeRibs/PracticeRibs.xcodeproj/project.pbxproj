@@ -13,6 +13,8 @@
 		4AD262FFD0A0226D7D5CBE6D /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */; };
 		6A2570A8285C053B004B9443 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570A7285C053B004B9443 /* RIBs */; };
 		6A2570AB285C0585004B9443 /* Features in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570AA285C0585004B9443 /* Features */; };
+		6A2570C1285C0F3A004B9443 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570C0285C0F3A004B9443 /* Modules */; };
+		6A2570C5285C1149004B9443 /* UserInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2570C4285C1149004B9443 /* UserInterface */; };
 		A24B8CD71A58A45084D728C4 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB2383FF57C0A0F938DFC1 /* AppRootInteractor.swift */; };
 		A7486D6D0C9D2DD0964D8FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB18525A199F4EB81B4911AA /* LaunchScreen.storyboard */; };
 		B6866F65525DC9AB684DFC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9094932D979DCCE0E7635A /* AppDelegate.swift */; };
@@ -33,6 +35,11 @@
 		6A2570B5285C096B004B9443 /* UserInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UserInterface; sourceTree = "<group>"; };
 		6A2570B9285C09E5004B9443 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Resources; sourceTree = "<group>"; };
 		6A2570BA285C09E5004B9443 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DesignSystem; sourceTree = "<group>"; };
+		6A2570BC285C0BD1004B9443 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
+		6A2570BD285C0C68004B9443 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
+		6A2570BE285C0C79004B9443 /* Persistance */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Persistance; sourceTree = "<group>"; };
+		6A2570C2285C0FD8004B9443 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
+		6A2570C3285C100F004B9443 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
 		7EFF7F777F23026A94BF4A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F0139AC06D07AC2EBF70D9 /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
 		FD9094932D979DCCE0E7635A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2570C1285C0F3A004B9443 /* Modules in Frameworks */,
+				6A2570C5285C1149004B9443 /* UserInterface in Frameworks */,
 				6A2570A8285C053B004B9443 /* RIBs in Frameworks */,
 				6A2570AB285C0585004B9443 /* Features in Frameworks */,
 			);
@@ -93,6 +102,8 @@
 		6A2570B0285C086D004B9443 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6A2570BB285C0BB5004B9443 /* Fragments */,
+				6A2570BC285C0BD1004B9443 /* Modules */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -115,6 +126,24 @@
 			path = Fragments;
 			sourceTree = "<group>";
 		};
+		6A2570BB285C0BB5004B9443 /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				6A2570C3285C100F004B9443 /* Analytics */,
+				6A2570C2285C0FD8004B9443 /* Utilities */,
+				6A2570BE285C0C79004B9443 /* Persistance */,
+				6A2570BD285C0C68004B9443 /* Network */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
+		6A2570BF285C0F3A004B9443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B170E9806150A2D2A88A5AA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +158,8 @@
 			children = (
 				F38D41A9A774966961E2ABC4 /* Application */,
 				6A2570A0285C01BB004B9443 /* Features */,
-				6A2570B0285C086D004B9443 /* Modules */,
 				6A2570B1285C08A6004B9443 /* UserInterface */,
+				6A2570B0285C086D004B9443 /* Modules */,
 			);
 			path = PracticeRIBs;
 			sourceTree = "<group>";
@@ -140,6 +169,7 @@
 			children = (
 				851C1B3EE102F7C438D65DB3 /* PracticeRIBs */,
 				F14EA7CF3AE97E27D0FC1CFB /* Products */,
+				6A2570BF285C0F3A004B9443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +210,8 @@
 			packageProductDependencies = (
 				6A2570A7285C053B004B9443 /* RIBs */,
 				6A2570AA285C0585004B9443 /* Features */,
+				6A2570C0285C0F3A004B9443 /* Modules */,
+				6A2570C4285C1149004B9443 /* UserInterface */,
 			);
 			productName = PracticeRIBs;
 			productReference = 5F499FF5E03D6ACF2CF5D935 /* PracticeRIBs.app */;
@@ -449,6 +481,14 @@
 		6A2570AA285C0585004B9443 /* Features */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Features;
+		};
+		6A2570C0285C0F3A004B9443 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+		6A2570C4285C1149004B9443 /* UserInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserInterface;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

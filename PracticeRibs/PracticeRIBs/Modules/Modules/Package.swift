@@ -4,19 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "UserInterface",
+    name: "Modules",
     products: [
         .library(
-            name: "UserInterface",
-            targets: ["UserInterface"]),
+            name: "Modules",
+            targets: ["Modules"]
+        )
     ],
     dependencies: [
-        .package(path: "DesignSystem"),
-        .package(path: "Resources")
+        .package(path: "Analytics"),
+        .package(path: "Utilities"),
+        .package(path: "Network"),
+        .package(path: "Persistance")
     ],
     targets: [
         .target(
-            name: "UserInterface",
+            name: "Modules",
             dependencies: []
         )
     ]
