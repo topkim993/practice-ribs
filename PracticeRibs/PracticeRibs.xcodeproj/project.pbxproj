@@ -144,13 +144,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6ABCECF8285C1A220050FF10 /* Temp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Temp;
-			sourceTree = "<group>";
-		};
 		7B170E9806150A2D2A88A5AA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +156,6 @@
 		851C1B3EE102F7C438D65DB3 /* PracticeRIBs */ = {
 			isa = PBXGroup;
 			children = (
-				6ABCECF8285C1A220050FF10 /* Temp */,
 				F38D41A9A774966961E2ABC4 /* Application */,
 				6A2570A0285C01BB004B9443 /* Features */,
 				6A2570B1285C08A6004B9443 /* UserInterface */,

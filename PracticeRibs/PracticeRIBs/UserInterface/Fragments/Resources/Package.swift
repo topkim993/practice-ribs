@@ -18,10 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "Resources",
-            dependencies: [],
-            resources: [
-              .process("Resources")
-            ]
+            dependencies: []
         )
     ]
 )

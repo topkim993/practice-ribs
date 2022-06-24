@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
       .package(path: "../../../UserInterface/DesignSystem"),
-      .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.5.0"))
+      .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0"))
     ],
     targets: [
         .target(
